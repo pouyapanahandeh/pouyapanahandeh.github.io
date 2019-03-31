@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app>    
     <v-toolbar app>
       <v-toolbar-title class="headline text-uppercase">
         <span>Hey! </span>
@@ -11,25 +11,43 @@
         <v-icon right>person_pin</v-icon>
       </v-btn>
     </v-toolbar>
-
+    <v-parallax dark src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg">
+        <v-layout align-center column justify-center>
+          <h1 class="display-2 font-weight-thin mb-3"></h1>
+          <h4 class="subheading"></h4>
+        </v-layout>
+    </v-parallax>
     <v-content>
       <HelloWorld/>
     </v-content>
+    <v-parallax dark src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg">
+        <v-layout align-center column justify-center>
+          <h1 class="display-2 font-weight-thin mb-3"></h1>
+          <h4 class="subheading"></h4>
+        </v-layout>
+    </v-parallax>
+    <v-content>
+      <Timeline/>
+      <Footer/>
+    </v-content>
+
   </v-app>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld'
+import Timeline from './components/Timeline'
+import Footer from './components/Footer'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld,
+    Timeline,
+    Footer
   },
-  data () {
-    return {
-      //
-    }
-  }
+  data: () => ({
+      
+    })
 }
 </script>
