@@ -18,7 +18,7 @@
         </v-layout>
     </v-parallax>
     <v-content>
-      <HelloWorld/>
+      <Timeline/>
     </v-content>
     <v-parallax dark src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg">
         <v-layout align-center column justify-center>
@@ -27,7 +27,8 @@
         </v-layout>
     </v-parallax>
     <v-content>
-      <Timeline/>
+      
+      <HelloWorld/>
       <Footer/>
     </v-content>
 
