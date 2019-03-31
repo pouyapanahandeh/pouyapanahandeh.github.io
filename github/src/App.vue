@@ -8,22 +8,23 @@
       <v-spacer></v-spacer>
       <v-btn href="https://github.com/pouyapanahandeh" round>
         Github
-        <v-icon right>person_pin</v-icon>
+        <v-icon right>fab fa-github</v-icon>
       </v-btn>
     </v-toolbar>
-    <v-parallax dark src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg">
+    <v-parallax dark :src="require('@/assets/imageOne.jpg')">
         <v-layout align-center column justify-center>
-          <h1 class="display-2 font-weight-thin mb-3"></h1>
+          <h1 class="display-2 font-weight-thick mb-3">Pouya Panahandeh</h1>
           <h4 class="subheading"></h4>
         </v-layout>
     </v-parallax>
     <v-content>
       <Timeline/>
     </v-content>
-    <v-parallax dark src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg">
+    <v-parallax dark :src="require('@/assets/imageTwo.jpg')">
         <v-layout align-center column justify-center>
-          <h1 class="display-2 font-weight-thin mb-3"></h1>
-          <h4 class="subheading"></h4>
+          <h1 class="display-2 font-weight-thick mb-3">LET'S HAVE A CHAT</h1>
+          <h2 class="subheading">Reach out and send me a friendly hello.</h2>
+          
         </v-layout>
     </v-parallax>
     <v-content>
