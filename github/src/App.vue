@@ -11,15 +11,69 @@
         <v-icon right>fab fa-github</v-icon>
       </v-btn>
     </v-toolbar>
-    <v-parallax dark :src="require('@/assets/imageOne.jpg')">
-        <v-layout align-center column justify-center>
-          <h1 class="display-2 font-weight-thick mb-3">Pouya Panahandeh</h1>
-          <h4 class="subheading"></h4>
+    <v-jumbotron color="blue-grey darken-3 lighten-1 white--text text-xs-center" dark>
+      <v-container fill-height>
+        <v-layout align-center>
+          <v-flex text-xs-center>
+            <h4 class="display-2">Pouya Panahandeh</h4>
+            <h4 class="display-1">
+              <v-chip color="indigo" text-color="white">
+                <v-avatar>
+                  <v-icon>fab fa-python</v-icon>
+                </v-avatar>
+                python
+              </v-chip>
+              <v-chip color="indigo" text-color="white">
+                <v-avatar>
+                  <v-icon>fab fa-node-js</v-icon>
+                </v-avatar>
+                node-js
+              </v-chip>
+              <v-chip color="indigo" text-color="white">
+                <v-avatar>
+                  <v-icon>fab fa-js-square</v-icon>
+                </v-avatar>
+                javaScript
+              </v-chip>
+              <v-chip color="indigo" text-color="white">
+                <v-avatar>
+                  <v-icon>fab fa-vuejs</v-icon>
+                </v-avatar>
+                Vue
+              </v-chip>
+              <v-chip color="indigo" text-color="white">
+                <v-avatar>
+                  <v-icon>fab fa-react</v-icon>
+                </v-avatar>
+                react
+              </v-chip>
+              <v-chip color="indigo" text-color="white">
+                <v-avatar>
+                  <v-icon>fab fa-java</v-icon>
+                </v-avatar>
+                Java
+              </v-chip>
+            </h4>
+            <h4 class="display-1">
+              <v-chip color="primary" text-color="white">
+                Budapest, Hungary
+                <v-icon right>fas fa-street-view</v-icon>
+              </v-chip>
+            </h4>
+          </v-flex>
         </v-layout>
-    </v-parallax>
+      </v-container>
+    </v-jumbotron>
     <v-content>
       <Timeline/>
     </v-content>
+        <v-parallax dark :src="require('@/assets/imageOne.jpg')">
+        <v-layout align-center column justify-center>
+          <v-content>
+            <HelloWorld/>
+          </v-content>
+        </v-layout>
+    </v-parallax>
     <v-parallax dark :src="require('@/assets/imageTwo.jpg')">
         <v-layout align-center column justify-center>
           <h1 class="display-2 font-weight-thick mb-3">LET'S HAVE A CHAT</h1>
@@ -38,8 +92,9 @@
         </v-layout>
     </v-parallax>
     <v-content>
-      
-      <HelloWorld/>
+      <Topic/>
+    </v-content>
+    <v-content>
       <Footer/>
     </v-content>
 
@@ -49,6 +104,7 @@
 <script>
 import HelloWorld from './components/HelloWorld'
 import Timeline from './components/Timeline'
+import Topic from './components/Topic'
 import Footer from './components/Footer'
 
 export default {
@@ -56,6 +112,7 @@ export default {
   components: {
     HelloWorld,
     Timeline,
+    Topic,
     Footer
   },
   data: () => ({

@@ -18,7 +18,7 @@
               <div class="py-3">
                 <h2 :class="`headline font-weight-light mb-3 ${year.color}--text`">Lorem ipsum</h2>
                 <div :class="`${year.title}`">
-                  
+                  {{year.description}}
                 </div>
               </div>
             </v-timeline-item>
@@ -34,25 +34,28 @@
       years: [
         {
           color: 'red',
-          year: '2000',
-          title: 'pooya inja 2'
+          year: '2014 - 2017',
+          description:'abdol karim'
         },
         {
           color: 'green',
-          year: '1970',
-          title: 'pooya inja 1'
+          year: '2014 - 2015',
+          description:'abdol saghir'
         },
         {
           color: 'pink',
-          year: '1980'
+          year: '2017 - present',
+          description: 'abdol majid'
         },
         {
           color: 'amber',
-          year: '1990'
+          year: '2018 - present',
+          description: 'abdol rahim'
         },
         {
           color: 'orange',
-          year: '2000'
+          year: '2000',
+          description: 'abdol satar'
         }
       ]
     })
