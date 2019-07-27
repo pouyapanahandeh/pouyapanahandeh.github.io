@@ -35,27 +35,27 @@
         {
           color: 'red',
           year: '2014 - 2017',
-          description:'abdol karim'
+          description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque gravida placerat nisl sed porttitor.'
         },
         {
           color: 'green',
           year: '2014 - 2015',
-          description:'abdol saghir'
+          description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque gravida placerat nisl sed porttitor.'
         },
         {
           color: 'pink',
           year: '2017 - present',
-          description: 'abdol majid'
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque gravida placerat nisl sed porttitor.'
         },
         {
           color: 'amber',
           year: '2018 - present',
-          description: 'abdol rahim'
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque gravida placerat nisl sed porttitor.'
         },
         {
           color: 'orange',
           year: '2000',
-          description: 'abdol satar'
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque gravida placerat nisl sed porttitor.'
         }
       ]
     })
