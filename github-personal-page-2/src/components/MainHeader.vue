@@ -4,7 +4,7 @@
         <span class="font-weight-light">Hey!</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-btn href="https://github.com/pouyapanahandeh" target="_blank" color="success">
+      <v-btn href="https://github.com/pouyapanahandeh" class="white--text" target="_blank" color="blue darken-1">
         <v-icon>mdi-github-circle</v-icon>
         <span class="mr-2">Check my github</span>
       </v-btn>
