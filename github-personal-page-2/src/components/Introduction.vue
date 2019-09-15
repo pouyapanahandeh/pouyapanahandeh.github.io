@@ -17,7 +17,7 @@
     </v-layout>
     
     <v-layout wrap>
-      <v-flex mb-12 xs12 >
+      <v-flex mb-5 xs12 >
         <v-layout justify-center>
           <a href="https://www.linkedin.com/in/pouyapan/">
             <v-icon color="blue darken-1">mdi-linkedin-box</v-icon>
