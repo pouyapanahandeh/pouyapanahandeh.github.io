@@ -4,8 +4,10 @@
     <v-content>
       <Introduction />
       <Education />
+      <Experience />
+      <Skills />
     </v-content>
-    <!-- <HelloWorld/> -->
+    <Footerend />
   </v-app>
 </template>
 
@@ -13,11 +15,14 @@
 import MainHeader from './components/MainHeader';
 import Introduction from './components/Introduction';
 import Education from './components/Education';
+import Experience from './components/Experience';
+import Skills from './components/Skills'
+import Footerend from './components/Footerend'
 // import HelloWorld from './components/HelloWorld';
 
 export default {
   name: 'App',
-  components: {MainHeader, Introduction, Education},
+  components: {MainHeader, Introduction, Education, Experience, Skills, Footerend},
   data: () => ({
     //
   }),
