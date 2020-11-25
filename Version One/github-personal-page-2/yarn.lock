@@ -2806,9 +2806,9 @@ hex-color-regex@^1.1.0:
   integrity sha512-l9sfDFsuqtOqKDsQdqrMRk0U85RZc0RtOR9yPI7mRVOa4FsR/BVnZ0shmQRM96Ji99kYZP/7hn1cedc1+ApsTQ==
 
 highlight.js@^9.6.0:
-  version "9.15.10"
-  resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-9.15.10.tgz#7b18ed75c90348c045eef9ed08ca1319a2219ad2"
-  integrity sha512-RoV7OkQm0T3os3Dd2VHLNMoaoDVx77Wygln3n9l5YV172XonWG6rgQD3XnF/BuFFZw9A0TJgmMSO8FEWQgvcXw==
+  version "9.18.5"
+  resolved "https://registry.yarnpkg.com/highlight.js/-/highlight.js-9.18.5.tgz#d18a359867f378c138d6819edfc2a8acd5f29825"
+  integrity sha512-a5bFyofd/BHCX52/8i8uJkjr9DYwXIPnM/plwI6W7ezItLGqzt7X2G2nXuYSfsIJdkwwj/g9DG1LkcGJI/dDoA==
 
 hmac-drbg@^1.0.0:
   version "1.0.1"
@@ -6592,10 +6592,10 @@ vuetify-loader@^1.2.2:
   dependencies:
     loader-utils "^1.2.0"
 
-vuetify@^2.0.0:
-  version "2.0.17"
-  resolved "https://registry.yarnpkg.com/vuetify/-/vuetify-2.0.17.tgz#824dc9e640fc249a4fe37a1757206dbc9fed3492"
-  integrity sha512-pBtwwF2SnZDfr2MPj5kA5VFUL9tjFVK4ca1+dUfw1LZS8AtJfOl70agpSMqcItehzESddIPsDu5sp/JOFCOygA==
+vuetify@^2.0.17:
+  version "2.3.19"
+  resolved "https://registry.yarnpkg.com/vuetify/-/vuetify-2.3.19.tgz#94ae6a8b0e2d52266b2a47c6a11021c63aa1b7b0"
+  integrity sha512-xqaiSEv0SUrzcoYU/N+orF7crRrhFkZt2ZPSDyPdHhiL6vMOFSYyz0OyGX3lAFykX/FJJMkNPgYTdg1l7WD1jA==
 
 vuex@^3.0.1:
   version "3.1.1"
