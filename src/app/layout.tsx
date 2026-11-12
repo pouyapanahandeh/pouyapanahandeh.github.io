@@ -1,24 +1,47 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import type { Metadata, Viewport } from "next";
+import { Bricolage_Grotesque, Outfit } from "next/font/google";
 import "./globals.css";
+import "./home.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const outfit = Outfit({
   subsets: ["latin"],
+  display: "swap",
+  variable: "--font-body",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const display = Bricolage_Grotesque({
   subsets: ["latin"],
+  display: "swap",
+  variable: "--font-display",
 });
+
+const title = "Pooya Panahandeh | Senior Full-Stack Engineer";
+const description =
+  "Senior Full-Stack Engineer specializing in TypeScript, Next.js, and Salesforce ecosystem. Based in Budapest, Hungary.";
 
 export const metadata: Metadata = {
-  title: "Pooya Panahandeh | Senior Full-Stack Engineer",
-  description:
-    "Senior Full-Stack Engineer specializing in TypeScript, Next.js, and Salesforce ecosystem. Based in Budapest, Hungary.",
+  metadataBase: new URL("https://pouyapanahandeh.github.io"),
+  title,
+  description,
+  authors: [{ name: "Pooya Panahandeh" }],
+  openGraph: {
+    title,
+    description,
+    url: "/",
+    siteName: "Pooya Panahandeh",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary",
+    title,
+    description,
+  },
 };
 
-import { ThemeProvider } from "@/components/theme-provider";
+export const viewport: Viewport = {
+  themeColor: "#e7e1d6",
+};
 
 export default function RootLayout({
   children,
@@ -26,19 +49,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          {children}
-        </ThemeProvider>
-      </body>
+    <html lang="en" className={`${outfit.variable} ${display.variable}`}>
+      <body className="antialiased">{children}</body>
     </html>
   );
 }
