@@ -481,7 +481,8 @@ h1 {
 
 .exp-list ul {
   margin: 0;
-  padding-left: 1.1rem;
+  padding-left: 1.2rem;
+  list-style: disc;
 }
 
 .exp-list li + li {
