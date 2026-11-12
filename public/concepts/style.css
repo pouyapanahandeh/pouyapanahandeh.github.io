@@ -1,0 +1,188 @@
+@font-face {
+  font-family: "Outfit";
+  src: url("fonts/outfit.woff2") format("woff2");
+  font-weight: 300 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Fraunces";
+  src: url("fonts/fraunces-italic.woff2") format("woff2");
+  font-weight: 500 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+:root {
+  --bg: #f4efe6;
+  --ink: #1a1814;
+  --muted: #4a453c;
+  --card: #fffdf8;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Outfit", "Segoe UI", sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.55;
+}
+
+:focus-visible {
+  outline: 3px solid #1a1814;
+  outline-offset: 3px;
+}
+
+a {
+  color: inherit;
+}
+
+.skip {
+  position: absolute;
+  left: 12px;
+  top: -48px;
+  background: var(--ink);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 999px;
+  text-decoration: none;
+}
+
+.skip:focus {
+  top: 12px;
+}
+
+.wrap {
+  width: min(1100px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 48px 0 64px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  font-weight: 650;
+}
+
+h1 {
+  margin: 0;
+  font-family: Fraunces, Georgia, serif;
+  font-style: italic;
+  font-weight: 560;
+  font-size: clamp(3rem, 8vw, 5.4rem);
+  letter-spacing: -0.04em;
+  line-height: 0.92;
+}
+
+.intro {
+  max-width: 40rem;
+  color: var(--muted);
+  font-size: 1.15rem;
+}
+
+.grid {
+  display: grid;
+  gap: 16px;
+  margin-top: 28px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background: var(--card);
+  border-radius: 24px;
+  overflow: hidden;
+  text-decoration: none;
+  min-height: 100%;
+  box-shadow: 0 1px 0 rgba(26, 24, 20, 0.06);
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+.preview {
+  min-height: 180px;
+  padding: 18px;
+}
+
+.preview.sketch {
+  background: #fff3e4;
+  background-image: radial-gradient(rgba(90, 60, 30, 0.14) 1.2px, transparent 1.2px);
+  background-size: 16px 16px;
+}
+
+.preview.bento {
+  background: #e7e1d6;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 8px;
+}
+
+.swatch {
+  border-radius: 14px;
+}
+
+.preview.orbit {
+  background:
+    radial-gradient(180px 120px at 80% 70%, rgba(224, 122, 76, 0.7), transparent 70%),
+    #070a12;
+  position: relative;
+}
+
+.body {
+  padding: 18px 18px 20px;
+}
+
+.body p {
+  margin: 8px 0 0;
+  color: var(--muted);
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.45rem;
+  letter-spacing: -0.03em;
+}
+
+.index {
+  margin: 0 0 6px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.cta {
+  display: inline-flex;
+  margin-top: 14px;
+  font-weight: 700;
+}
+
+.back {
+  display: inline-flex;
+  margin-top: 28px;
+  font-weight: 650;
+}
+
+@media (min-width: 860px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: stretch;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card:hover {
+    transform: none;
+  }
+}
