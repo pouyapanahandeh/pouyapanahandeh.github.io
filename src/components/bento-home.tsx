@@ -416,11 +416,19 @@ export function BentoHome() {
                 <h3>EF · Budapest</h3>
                 <p className="dates">Dec 2022 – Present</p>
               </div>
-              <p className="role">Software Developer</p>
+              <p className="role">Software Developer · ILS</p>
               <ul>
+                <li>
+                  Salesforce engineering for the ILS division, after earlier feature
+                  work on the Cultural Care au pair app.
+                </li>
                 <li>Landing pages for marketing initiatives. Next.js, React, TypeScript.</li>
-                <li>Salesforce features for the sales process. Apex, LWC.</li>
-                <li>New features for the Cultural Care app.</li>
+                <li>
+                  Salesforce implementation for the sales process: custom development
+                  with Apex, LWC, flows, and the data model.
+                </li>
+                <li>Integrations that connect Salesforce with other systems through APIs.</li>
+                <li>Building and implementing AI agents with Salesforce Agentforce.</li>
               </ul>
             </article>
             <article>

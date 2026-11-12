@@ -43,9 +43,11 @@ export const resumeData = {
       startDate: "Dec 2022",
       endDate: "Present",
       description: [
-        "Developed and implemented several landing pages to enhance user experience and support marketing initiatives [technologies: Next.js, React, TypeScript].",
-        "Integrated new features into Salesforce as per requirements to optimize the sales process [Apex, LWC].",
-        "Contributed to the development of new features for the Cultural Care app, enhancing user engagement.",
+        "Salesforce engineering for the ILS division, after earlier feature work on the Cultural Care au pair app.",
+        "Developed landing pages for marketing initiatives. Next.js, React, TypeScript.",
+        "Salesforce implementation for the sales process: custom development with Apex, LWC, flows, and the data model.",
+        "Integrations that connect Salesforce with other systems through APIs.",
+        "Building and implementing AI agents with Salesforce Agentforce.",
       ],
     },
     {
